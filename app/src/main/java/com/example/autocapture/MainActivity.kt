@@ -59,12 +59,19 @@ fun Greeting(name: String, modifier: Modifier = Modifier, onButtonClick: () -> U
             style = MaterialTheme.typography.bodySmall
         )
 
+        Text(
+            text = "Learn about CI/CD implementation",
+            style = MaterialTheme.typography.bodySmall
+        )
+
         Button(
             onClick = { onButtonClick() },
             modifier = Modifier.padding(top = 16.dp)
         ) {
             Text(text = "Click Me")
         }
+
+
     }
 }
 
